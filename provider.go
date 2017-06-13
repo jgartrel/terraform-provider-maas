@@ -22,7 +22,7 @@ func Provider() terraform.ResourceProvider {
 			},
 			"api_version": {
 				Type:        schema.TypeString,
-				Required:    false,
+				Optional:    true,
 				Default:     "2.0",
 				Description: "The MAAS API version. Currently: 1.0",
 			},
